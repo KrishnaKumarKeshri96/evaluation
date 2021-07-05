@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout</title>
+        <style>
+            body div{
+                font-family: monospace;
+
+            }
+            .heading{
+                text-align: center;
+                
+                padding:10px;
+                
+
+            }
+            .head1{
+
+                color: tomato;
+                font-size:20px;
+                font-weight: 800;
+
+            }
+            .head1:hover{
+                color:rgb(243, 150, 134)
+            }
+            
+            .head2{
+                font-weight: bolder;
+                font-size: 30px;
+
+                
+            }
+            .blog{
+                display: flex;
+               
+                
+                
+                height: 280px;
+                
+            }
+            .blog > div {
+                
+                flex-grow: 1;
+                margin:10px;
+                
+               
+                margin-left: 35px;
+            
+
+                
+                                         
+
+            }
+            div .date{
+                color: rgb(133, 133, 133);
+
+               
+
+            }
+            .date~div{
+                font-size: 20px;
+                font-weight: bolder;
+
+            }
+
+            .button{
+                height:20px;
+                width:120px;
+                color:white;
+                background-color: tomato;
+                padding:20px;
+                margin:auto;
+                text-align: center;
+                
+
+            }
+            .button:hover{
+                background-color: rgb(245, 137, 118);
+            }
+
+            .services{
+                padding-top: 80px;
+            }
+
+            .ss{
+                color: rgb(133, 133, 133);
+                width:500px;
+                text-align: center;
+                margin:auto;
+
+
+            }  
+
+            #grid{
+                display: grid;
+                
+               
+                padding:20px;  
+                padding-left:40px;   
+                
+               
+            }
+            div > .smallgrid{
+                display: grid;
+                grid-template-areas: "a b";
+                width: 250px;
+                height:100px;
+            }
+            .img{
+                margin:5px;
+                padding:5px;
+                width: 50px;
+                height: 50px;
+                grid-area: a;
+            }
+            .text1{
+                margin: 5px;
+                padding:5px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                font-size: 10px;
+                font-weight: bolder;
+                grid-area: b;
+                
+
+
+            }
+            .text2{
+               
+               
+                
+                padding-top: 5px;
+                grid-area: c;
+                color: rgb(133, 133, 133);
+                font-size: 10px;
+                font-weight: lighter;
+
+            }
+
+            @media only screen and (max-width: 600px) {
+                 #grid{
+                
+                grid-template-columns: auto;
+                
+                
+                 }
+                 div > .smallgrid{
+                     margin: auto;
+                 }
+
+
+            }
+    
+        @media only screen and (min-width: 768px) {
+             #grid{
+                
+                grid-template-columns: auto auto;
+                
+                 }
+        }
+
+
+        @media only screen and (min-width: 992px) { 
+            #grid{
+                
+                grid-template-columns: auto auto auto;
+                
+                 }
+        }
+
+
+   
+
+
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="heading head1">NEWS & UPDATE</div>
+        <div class="heading head2">Our Blog Posts</div>
+        <div class="blog">
+            <div>
+                <img src="https://via.placeholder.com/350x200"/>
+                <div class="date">29 Janurary 2019</div>
+                <div>Architectural Art Modem</div>
+
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x200" />
+                <div class="date">29 Janurary 2019</div>
+                <div>Architectural Art Modem</div>
+
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x200" />
+                <div class="date">29 Janurary 2019</div>
+                <div>Architectural Art Modem</div>
+                
+            </div>
+            
+           
+           
+
+        </div>
+
+        <div class="button">View All Posts</div>
+
+        <div class="heading head1 services">SERVICES</div>
+        <div class="heading head2">Our Services</div>
+        <div class="ss">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mauris id lectus luctus finibus in vitae mi. Sed at
+        nunc rutrum, consequat ante et, lobortis neque. Sed feugiat at metus eget dapibus.</div>
+
+
+        <div id="grid">
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+            <div>
+                <div class="smallgrid">
+            
+                    <img class="img" src="https://via.placeholder.com/50x50 " />
+                    <div class="text1">Innovative Structure
+                        <div class="text2">Cras venenatis rutrum elit eu consequat.</div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+        
+       
+        
+
+             
+    </body>
+</html>
